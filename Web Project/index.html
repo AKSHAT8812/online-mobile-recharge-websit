@@ -1,0 +1,295 @@
+<html>
+
+<head>
+    <title>Mobile-Recharge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loginsignup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="akshatr.jpg"></link>
+</head>
+
+<body>
+    <div class="coverbody">
+
+        <div class="header">
+            <center>
+                <h1>Online <font color="red">Mobile</font> Recharge</h1>
+            </center>
+        </div>
+
+        <div class="navbarfrist">
+            <div class="topnav-left">
+                <button onclick "index.html"><span>&#10063;</span>Home</button>
+            </div>
+
+            <div class="topnav-right">
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><span>&#10148;</span>Signup</button>
+                <div id="id02" class="modal">
+
+                    <form class="modal-content animate" action="action_signup.html" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+
+                        <div class="container">
+                            <h1>Sign Up</h1>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                            <div class="clearfix">
+                                <button onclick="myFunction(1)">Sign Up</a> </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="topnav-right">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span>&#10004;</span>Login</button>
+
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="action_login.html" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+
+                            <button onclick="myFunction(2)">Log In</button>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mainbody">
+            <div class="topall">
+		<div class="row">
+<div class="col-md-4">
+<select>
+<option>Quick Recharge</option>
+<option>Post paid</option>
+<option>Pre paid</option>
+<option>Post or pre</option>
+<option>Special Recharge</option>
+</select>
+<select>
+<option>Operator</option>
+<option>Vodafone</option>
+<option>Jio</option>
+<option>Airtel</option>
+<option>Idea</option>
+</select>
+<select>
+<option>Rate</option>
+<option>100</option>
+<option>200</option>
+<option>300</option>
+<option>400</option>
+</select>
+<select>
+<option>Plans</option>
+<option>Talk time</option>
+<option>Internet</option>
+<option>IST</option>
+<option>SMS</option>
+</select>
+  <center><img src="img_avatar2.png" alt="Profile-Picture" height="250" width="250"></center>
+</div>
+            </div>
+
+            </br>
+            </br>
+
+            <table>
+                <div class="topall">
+                    <div class="navbar">
+                        <h2><center>Recharge</center></h2>
+                    </div>
+
+                    <tr>
+                        <td>
+                            <center>
+                                <p>Enter Mobile No:</p>
+                                <input type="name" placeholder="8847577880" maxlength="10">
+                                <center>
+                        </td>
+
+                        <td>
+                            <center>
+                                <p>Select Recharge Type</p>
+                                <form action="/action_page.php">
+                                    <input list="browsers" name="browser" placeholder="Prepaid">
+                                    <datalist id="browsers">
+                                        <option value="Postpaid">
+                                            <option value="Prepaid">
+                                                <option value="Pre Or Post">
+                                                    <option value="Special Recharge">
+                                    </datalist>
+                                </form>
+                                <center>
+                        </td>
+
+                        <td>
+                            <center>
+                                <p>Enter Amount</p>
+                                <input type="name" placeholder="20">
+                                <center>
+                        </td>
+
+                        <td>
+                            <center>
+                                <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Pay</button>
+                                <div id="id03" class="modal">
+
+										<form class="modal-content animate" action="action_pay.html" method="post">
+                                        <div class="imgcontainer">
+                                            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                        </div>
+
+                                        <div class="container">
+
+                                            <label for="psw"><b>Agent Pin</b></label>
+                                            <input type="password" placeholder="Pin" name="psw" required>
+                                            <button onclick="myFunction(3)">Pay</button>
+											<p id="demo"></p>
+                                        </div>
+                                </div>
+                                <center>
+                        </td>
+
+                    </tr>
+
+                </div>
+            </table>
+
+            </br>
+            </br>
+            </br>
+        </div>
+
+        <div class="footer">
+
+            <div class="frl">
+                <div class="fr-cr">
+                    <h4><p>About Us</p></h4>
+                    <h5><p>Lovely Professional University</p></h5>
+                    <h5><p>B.Tech (CSE)</p></h5>
+                    <h5> <p>K19GK-G2</p></h5>
+
+                </div>
+
+                <div class="fr-cr">
+                    <h4><p>Call us</p></h4>
+                    <h5>+91 88475-77880</h5>
+                </div>
+
+                <div class="fr-cr">
+                    <h4><p>Created by</p></h4>
+                    <h5><p>Mahamudun Noby Munna</p></h5>
+                    <h5><p>Akshat</p></h5>
+                    <h5><p>Sachin Kumar Jangir</p></h5>
+                </div>
+            </div>
+            <hr>
+            <p>
+                <left>2020<font color="red">©</font>LPU</left>
+            </p>
+
+            <div class="fixed">Think BIG</div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id03');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+	
+<script>
+function myFunction(1) {
+  var txt;
+  var r = confirm("Press a button");
+  if (r == true) {
+    txt = "Pay successful";
+  } else {
+    txt = "Pay unsuccessful";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+<script>
+function myFunction(2) {
+  var txt;
+  var r = confirm("Press a button");
+  if (r == true) {
+    txt = "Pay successful";
+  } else {
+    txt = "Pay unsuccessful";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+<script>
+function myFunction(3) {
+  var txt;
+  var r = confirm("Press a button");
+  if (r == true) {
+    txt = "Pay successful";
+  } else {
+    txt = "Pay unsuccessful";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+
+</html>
